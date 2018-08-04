@@ -1,0 +1,80 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[MeX]{polski}
+\usepackage{microtype}
+\usepackage{indentfirst}
+\usepackage{calc}
+\usepackage{amsmath}
+\usepackage{multicol}
+% \usepackage[symbol]{footmisc}
+% \usepackage{times}
+
+\usepackage[
+pdftitle={Wniosek o uzyskanie wpisu na kolejny rok studiów},
+colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black]{hyperref}
+\urlstyle{same}
+
+\usepackage{geometry}
+\geometry{total={210mm,297mm},
+left=25mm,right=25mm,%
+bindingoffset=0mm, top=25mm,bottom=20mm}
+
+\linespread{1.2}
+\pagestyle{empty}
+
+% \newlength{\signaturelength}
+% \newcommand{\fillField}[2]{
+%     $\underset{\text{#1}}{\underline{\hspace{#2}}}$
+% }
+\newcommand{\fillField}[2]{
+    $\underset{\text{#1}}{\parbox[t]{#2}{\dotfill}}$
+}
+
+% \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\begin{document}
+\noindent
+\fillField{(imię i nazwisko studenta)}{5cm} \hfill Kraków, dnia \fillField{}{2cm} \\\\
+\textbf{Nr albumu:}   \fillField{}{2.3cm}\\
+\textbf{Rok studiów:} \fillField{}{2cm}\\
+\textbf{Kierunek:} Informatyka -- studia stacjonarne pierwszego stopnia\\
+\textbf{Adres:}\\
+\fillField{(nr kodu pocztowego - miejscowość)}{5cm}\\\\
+\fillField{(ulica/osiedle – nr domu/mieszkania)}{5cm}\\\\
+\fillField{(adres e-mail)}{5cm}\\
+\fillField{(telefon)}{5cm}
+\phantom{a}\hfill
+\begin{tabular}[c]{@{}l@{}}
+\textit{Kierownik studiów pierwszego stopnia} \\
+\textit{na kierunku Informatya}\\
+\textit{dr Jakub Zygadło}
+\end{tabular}
+
+\vskip 2.0cm
+
+
+\noindent
+Zwracam się z uprzejmą prośbą o możliwość zaliczania całości
+lektoratu z języka\fillField{}{2.3cm}\footnote{podać nazwę języka obcego} egzaminem/egzaminem eksternistycznym\footnote{niepotrzebne skreślić [Egzamin - dotyczy przepisania oceny na podstawie certyfikatu jęzkowego]}
+na poziomie \fillField{}{3cm}\footnote{minimum poziom B2}. \\
+
+\noindent
+Proszę o naliczenie\fillField{}{3cm}\footnote{suma punktów za cały kurs [czyli wszystkie semestry + egzamin]} punktów ECTS za zdany egzamin.\\
+
+\noindent
+Jednocześnie zobowiązuję się do zaliczenia wyżej wymienionego egzaminu do końca\\\fillField{}{3cm}\footnote{w przypadku podjęcia decyzji o zaliczeniu lektoratu Egzaminem Eksternistycznym, należy zaliczyć go do końca \textbf{drugiego} roku studiów! W wyjątkowych przypadkach Kierownik studiów może podjąć decyzje o predłużeniu tego okresu} roku studiów.
+
+\vskip 1cm
+
+\hspace{\fill} \fillField{(podpis studenta)}{5cm} \hspace{2.0cm}
+\vskip 3.0cm
+
+\noindent
+\textbf{Decyzja Kierownika} \dotfill
+\vskip 0.5cm
+\noindent
+Data ……………………………… Podpis \dotfill
+
+\end{document}
+ 
