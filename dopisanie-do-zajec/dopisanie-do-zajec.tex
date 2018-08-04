@@ -6,6 +6,7 @@
 \usepackage{indentfirst}
 \usepackage{calc}
 \usepackage{amsmath}
+\usepackage[symbol]{footmisc}
 % \usepackage{times}
 
 \usepackage[
@@ -21,21 +22,15 @@ bindingoffset=0mm, top=25mm,bottom=25mm}
 \linespread{1.3}
 \pagestyle{empty}
 
-\newlength{\signaturelength}
+% \newlength{\signaturelength}
+% \newcommand{\fillField}[2]{
+%     $\underset{\text{#1}}{\underline{\hspace{#2}}}$
+% }
 \newcommand{\fillField}[2]{
-    $\underset{\text{#1}}{\underline{\hspace{#2}}}$
+    $\underset{\text{#1}}{\parbox[t]{#2}{\dotfill}}$
 }
 
-\newcounter{footnotemarknum}
-\newcommand{\fnm}{\addtocounter{footnotemarknum}{1}\footnotemark} 
-
-\newcommand{\fnt}[1]{
-    \addtocounter{footnote}{-\value{footnotemarknum}}
-    \addtocounter{footnote}{1}
-    \footnotetext{#1}
-    \setcounter{footnotemarknum}{0}
-}
-
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
 
 \begin{document}
 \noindent
@@ -43,7 +38,7 @@ bindingoffset=0mm, top=25mm,bottom=25mm}
 \textbf{Nr albumu:}   \fillField{}{4.9cm}\\
 \textbf{Rok studiów:} \fillField{}{4.6cm}\\
 \textbf{Kierunek:} Informatyka -- studia stacjonarne pierwszego stopnia\\
-\textbf{Stopnień:} I stopnia/II stopnia\textsuperscript{1}
+\textbf{Stopnień:} I stopnia/II stopnia\footnote[1]{niepotrzebne skreślić}
 
 \vskip 2.0cm
 
@@ -74,8 +69,6 @@ bindingoffset=0mm, top=25mm,bottom=25mm}
 
 \end{enumerate}
 
-
-\fnt{niepotrzebne skreślić}
 
 \end{document}
  
