@@ -23,20 +23,15 @@ bindingoffset=0mm, top=25mm,bottom=25mm}
 \linespread{1.3}
 \pagestyle{empty}
 
-\newlength{\signaturelength}
+% \newlength{\signaturelength}
+% \newcommand{\fillField}[2]{
+%     $\underset{\text{#1}}{\underline{\hspace{#2}}}$
+% }
 \newcommand{\fillField}[2]{
-    $\underset{\text{#1}}{\underline{\hspace{#2}}}$
+    $\underset{\text{#1}}{\parbox[t]{#2}{\dotfill}}$
 }
 
-\newcounter{footnotemarknum}
-\newcommand{\fnm}{\addtocounter{footnotemarknum}{1}\footnotemark} 
-
-\newcommand{\fnt}[1]{
-    \addtocounter{footnote}{-\value{footnotemarknum}}
-    \addtocounter{footnote}{1}
-    \footnotetext{#1}
-    \setcounter{footnotemarknum}{0}
-}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
 
 \begin{document}
 \noindent
@@ -68,13 +63,11 @@ bindingoffset=0mm, top=25mm,bottom=25mm}
 \vskip 0.5cm
 
 % \noindent
-Oświadczam, że podejmuję studia po powrocie z urlopu dziekańskiego/studenckiego\textsuperscript{1} udzielonego na \fillField{}{2cm} roku studiów pierwszego stopnia w roku akademickim 20\fillField{}{0.7cm}/20\fillField{}{0.7cm} [semestr zimowy/letni\textsuperscript{1}] na kierunku Informatyka i proszę o wpisanie mnie na listę studentów \fillField{}{2cm} roku w roku akademickim 20\fillField{}{0.7cm}/20\fillField{}{0.7cm}.
+Oświadczam, że podejmuję studia po powrocie z urlopu dziekańskiego/studenckiego\footnote[1]{niepotrzebne skreślić} udzielonego na \fillField{}{2cm} roku studiów pierwszego stopnia w roku akademickim 20\fillField{}{0.7cm}/20\fillField{}{0.7cm} [semestr zimowy/letni\textsuperscript{*}] na kierunku Informatyka i proszę o wpisanie mnie na listę studentów \fillField{}{2cm} roku w roku akademickim 20\fillField{}{0.7cm}/20\fillField{}{0.7cm}.
 
 \vskip 2.0cm
 
 \hspace{\fill} \fillField{(podpis studenta)}{5cm} \hspace{2.0cm}
-
-\fnt{niepotrzebne skreślić}
 
 
 \end{document}
