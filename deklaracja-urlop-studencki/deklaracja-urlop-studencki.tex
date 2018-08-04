@@ -22,9 +22,12 @@ bindingoffset=0mm, top=15mm,bottom=10mm}
 \linespread{1.3}
 \pagestyle{empty}
 
-\newlength{\signaturelength}
+% \newlength{\signaturelength}
+% \newcommand{\fillField}[2]{
+%     $\underset{\text{#1}}{\underline{\hspace{#2}}}$
+% }
 \newcommand{\fillField}[2]{
-    $\underset{\text{#1}}{\underline{\hspace{#2}}}$
+    $\underset{\text{#1}}{\parbox[t]{#2}{\dotfill}}$
 }
 
 \newcounter{footnotemarknum}
@@ -46,11 +49,8 @@ bindingoffset=0mm, top=15mm,bottom=10mm}
 \textbf{Adres:}\\
 \fillField{(nr kodu pocztowego - miejscowość)}{5cm}\\\\
 \fillField{(ulica/osiedle – nr domu/mieszkania)}{5cm}\\\\
-\fillField{(adres e-mail)}{5cm}\\\\
+\fillField{(adres e-mail)}{5cm}\\
 \fillField{(telefon)}{5cm}
-
-% \vskip 1.0cm
-
 \phantom{a}\hfill
 \begin{tabular}[c]{@{}l@{}}
 \textit{Prodziekan ds. studenckich} \\
@@ -58,7 +58,7 @@ bindingoffset=0mm, top=15mm,bottom=10mm}
 \textit{dr hab. Piotr Niemiec}
 \end{tabular}
 
-\vskip 0.5cm
+\vskip 1cm
 
 \begin{center}
 {\Large \textbf{Deklaracja o zamiarze wykorzystania urlopu studenckiego}}
