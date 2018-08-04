@@ -23,9 +23,12 @@ bindingoffset=0mm, top=25mm,bottom=25mm}
 \linespread{1.3}
 \pagestyle{empty}
 
-\newlength{\signaturelength}
+% \newlength{\signaturelength}
+% \newcommand{\fillField}[2]{
+%     $\underset{\text{#1}}{\underline{\hspace{#2}}}$
+% }
 \newcommand{\fillField}[2]{
-    $\underset{\text{#1}}{\underline{\hspace{#2}}}$
+    $\underset{\text{#1}}{\parbox[t]{#2}{\dotfill}}$
 }
 
 \newcounter{footnotemarknum}
