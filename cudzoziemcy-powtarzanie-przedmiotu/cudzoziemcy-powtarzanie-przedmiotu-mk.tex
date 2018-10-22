@@ -1,0 +1,105 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[MeX]{polski}
+\usepackage{microtype}
+\usepackage{indentfirst}
+\usepackage{calc}
+\usepackage{amsmath}
+\usepackage{multicol}
+% \usepackage{times}
+
+\usepackage[
+pdftitle={Powtarzanie przedmiotu},
+colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black]{hyperref}
+\urlstyle{same}
+
+\usepackage{geometry}
+\geometry{total={210mm,297mm},
+left=25mm,right=25mm,%
+bindingoffset=0mm, top=15mm,bottom=10mm}
+
+\linespread{1.2}
+\pagestyle{empty}
+
+\newlength{\signaturelength}
+% \newcommand{\fillField}[2]{
+%     $\underset{\text{#1}}{\underline{\hspace{#2}}}$
+% }
+\newcommand{\fillField}[2]{
+    $\underset{\text{#1}}{\parbox[t]{#2}{\dotfill}}$
+}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\begin{document}
+\noindent
+\fillField{(imię i nazwisko studenta)}{5cm} \hfill Kraków, dnia \fillField{}{2cm} \\\\
+\textbf{Nr albumu:}   \fillField{}{2.3cm}\\
+\textbf{Rok studiów:} \fillField{}{2cm}\\
+\textbf{Kierunek:} Matematyka Komputerowa -- studia stacjonarne pierwszego/drugiego* stopnia\\
+\textbf{Adres:}\\
+\fillField{(nr kodu pocztowego - miejscowość)}{5cm}\\\\
+\fillField{(ulica/osiedle – nr domu/mieszkania)}{5cm}\\\\
+\fillField{(adres e-mail)}{5cm}\\
+\fillField{(telefon)}{5cm}
+\phantom{a}\hfill
+\begin{tabular}[c]{@{}l@{}}
+\textit{Kierownik studiów pierwszego i drugiego stopnia} \\
+\textit{na kierunku i specjalności Matematyka Komputerowa}\\
+\textit{dr Małgorzata Moczurad}
+\end{tabular}
+
+\vskip 1.0cm
+
+\noindent
+Proszę o naliczenie należności za powtarzanie n/w przedmiotu(ów) w roku\\ akademickim \fillField{}{1cm}/\fillField{}{1cm}.
+
+\noindent
+\textit{Nazwa przedmiotu/semestr/liczba punktów ECTS/liczba godzin}
+\begin{enumerate}
+    \item \dotfill
+    \item \dotfill
+\end{enumerate}{\footnotesize
+\textbf{Zasady odbywania studiów\footnote[1]{niepotrzebne skreślić}:}
+\begin{itemize}
+    \itemsep-0.7em
+    \item[--] na zasadach obywateli polskich
+    \item[--] jako stypendysta strony polskiej
+    \item[--] na zasadach odpłatności
+\end{itemize}
+[wysokość opłaty za rok studiów zgodnie z zawartą umową o warunkach odpłatności za studia]: \dotfill\\ PLN/EUR*\\
+Liczba realizowanych godzin w roku akademickim \dotfill wyniosła: \dotfill\\
+Stawka godzinowa [czesne za rok studiów/liczbę realizowanych godzin w danym roku akademickim]: \dotfill\\ PLN/EUR*
+\begin{itemize}
+    \itemsep-0.7em
+    \item[--] bez odpłatności i świadczeń stypendialnych
+    \item[--] jako stypendysta strony wysyłającej, bez ponoszenia opłat za naukę
+    \item[--] jako stypendysta uczelni
+\end{itemize}
+}
+
+{\footnotesize
+\noindent
+\underline{Kwota do zapłaty:}\\
+\textit{Semestr zimowy [wpłata do 22.10]}\\
+Liczba punktów/godzin \dotfill $\times$ stawka godzinowa \dotfill PLN/EUR* = \dotfill PLN/EUR* \\\\
+\textit{Semestr letni [wpłata do 15.03]}\\
+Liczba punktów/godzin \dotfill $\times$ stawka godzinowa \dotfill PLN/EUR* = \dotfill PLN/EUR* \\
+
+\hspace{\fill} Razem: \ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots\ldots PLN/EUR* \hspace{2.0cm}
+}
+
+\vskip 0.6cm
+
+\hspace{\fill} \fillField{(podpis studenta)}{5cm} \hspace{2.0cm}
+\vskip 1.0cm
+
+\noindent
+\textbf{Decyzja Kierownika} \dotfill
+\vskip 0.5cm
+\noindent
+Data ……………………………… Podpis \dotfill
+
+\end{document}
+ 
