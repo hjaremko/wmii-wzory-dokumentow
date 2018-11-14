@@ -1,5 +1,4 @@
-# Wzory podań i dokumentów
-
+# Wzory podań i dokumentów [![Build Status](https://travis-ci.com/hjaremko/wmii-wzory-dokumentow.svg?branch=master)](https://travis-ci.com/hjaremko/wmii-wzory-dokumentow)
 
 PRZED                                  |  PO
 :-------------------------------------:|:-------------------------------------:
