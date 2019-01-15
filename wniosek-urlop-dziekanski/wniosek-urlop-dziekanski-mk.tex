@@ -1,0 +1,105 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[MeX]{polski}
+\usepackage{microtype}
+\usepackage{indentfirst}
+\usepackage{calc}
+\usepackage{amsmath}
+\usepackage{multicol}
+% \usepackage{times}
+
+\usepackage[
+pdftitle={Wniosek o udzielenie zgody na urlop dziekański},
+colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black]{hyperref}
+\urlstyle{same}
+
+\usepackage{geometry}
+\geometry{total={210mm,297mm},
+left=25mm,right=25mm,%
+bindingoffset=0mm, top=15mm,bottom=10mm}
+
+\linespread{1.3}
+\pagestyle{empty}
+
+% \newlength{\signaturelength}
+% \newcommand{\fillField}[2]{
+%     $\underset{\text{#1}}{\underline{\hspace{#2}}}$
+% }
+\newcommand{\fillField}[2]{
+    $\underset{\text{#1}}{\parbox[t]{#2}{\dotfill}}$
+}
+
+
+\begin{document}
+\noindent
+\fillField{(imię i nazwisko studenta)}{5cm} \hfill Kraków, dnia \fillField{}{2cm} \\\\
+\textbf{Nr albumu:}   \fillField{}{2.3cm}\\
+\textbf{Rok studiów:} \fillField{}{2cm}\\
+\textbf{Kierunek:} Matematyka komputerowa -- studia stacjonarne pierwszego/drugiego* stopnia\\
+\textbf{Adres:}\\
+\fillField{(nr kodu pocztowego - miejscowość)}{5cm}\\\\
+\fillField{(ulica/osiedle – nr domu/mieszkania)}{5cm}\\\\
+\fillField{(adres e-mail)}{5cm}\\\\
+\fillField{(telefon)}{5cm}
+
+% \vskip 1.0cm
+
+\phantom{a}\hfill
+\begin{tabular}[c]{@{}l@{}}
+\textit{Prodziekan ds. studenckich} \\
+\textit{Wydziału Matematyki i Informatyki}\\
+\textit{dr hab. Piotr Niemiec}
+\end{tabular}
+
+\vskip 0.5cm
+
+\begin{center}
+{\Large \textbf{Wniosek o udzielenie zgody na urlop dziekański}}
+\end{center}
+
+\vskip 0.5cm
+
+% \noindent
+Zgodnie z § 30 ust. 6 Regulaminu studiów I stopnia, II stopnia oraz jednolitych studiów
+magisterskich, proszę o udzielenie mi urlopu dziekańskiego z powodu:\\
+.\dotfill\\
+.\dotfill\\
+.\dotfill\\
+W okresie od \fillField{}{3cm} do \fillField{}{3cm}.\\
+{[semestr zimowy, semestr letni, rok akademicki \fillField{}{1cm}/\fillField{}{1cm}]}
+\textit{    (niepotrzebne skreślić)}\\
+Ponadto proszę o wyrażenie zgody na udział w zajęciach oraz zaliczenie n/w przedmiotów:
+
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item \dotfill
+        \item \dotfill
+        \item \dotfill
+        \item \dotfill
+        \item \dotfill
+        \item \dotfill
+        \item \dotfill
+        \item \dotfill
+    \end{enumerate}
+    \end{multicols}
+
+\vskip 0.3cm
+
+\hspace{\fill} \fillField{(podpis studenta)}{5cm} \hspace{2.0cm}
+\vskip 1.0cm
+
+\noindent
+\textbf{Opinia Kierownika} \dotfill
+\vskip 0.5cm
+\noindent
+Data ……………………………… Podpis \dotfill\\
+
+\noindent
+\textbf{Decyzja Dziekana} \dotfill
+\vskip 0.5cm
+\noindent
+Data ……………………………… Podpis \dotfill
+
+\end{document}
+
