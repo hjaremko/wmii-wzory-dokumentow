@@ -1,0 +1,57 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[MeX]{polski}
+\usepackage{microtype}
+\usepackage{indentfirst}
+\usepackage{calc}
+\usepackage{amsmath}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{graphicx}
+% \usepackage{times}
+
+\usepackage[
+pdftitle={Oświadczenie o zaliczeniu roku},
+colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black]{hyperref}
+\urlstyle{same}
+
+\usepackage{geometry}
+\geometry{total={210mm,297mm},
+left=25mm,right=25mm,%
+bindingoffset=0mm, top=25mm,bottom=20mm}
+
+\linespread{1.3}
+\pagestyle{empty}
+
+\newcommand{\fillField}[2]{
+    $\underset{\text{#1}}{\parbox[t]{#2}{\dotfill}}$
+}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\begin{document}
+\noindent
+\fillField{(imię i nazwisko studenta)}{7cm} \hfill Kraków, \fillField{}{3cm} \\\\
+\fillField{(nr albumu)}{7cm} \\\\
+\fillField{(rok studiów)}{7cm} \\\\
+\fillField{(stopień)}{7cm} \\
+
+\vskip 2.0cm
+
+\begin{center}
+{\Large \textbf{Oświadczenie}}
+\end{center}
+
+\vskip 0.5cm
+
+% \noindent
+Oświadczam, że wszystkie przedmioty zadeklarowane w roku akademikim 20\fillField{}{0.6cm}/\fillField{}{0.6cm} zostały przeze mnie zaliczone. Proszę o rozliczenie \fillField{}{3cm} roku studiów oraz wpis na kolejny rok.
+\vskip 2.0cm
+
+\hspace{\fill} Z~poważaniem, \hspace{2.8cm} \\\\
+\null\hfill\fillField{(podpis studenta)}{6cm}% \hspace{2.0cm}
+\vskip 4.0cm
+
+
+\end{document}
+
