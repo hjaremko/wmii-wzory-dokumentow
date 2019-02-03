@@ -1,0 +1,71 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[MeX]{polski}
+\usepackage{microtype}
+\usepackage{indentfirst}
+\usepackage{calc}
+\usepackage{amsmath}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{graphicx}
+% \usepackage{times}
+
+\usepackage[
+pdftitle={Deklaracja tematu pracy dyplomowej},
+colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black]{hyperref}
+\urlstyle{same}
+
+\usepackage{geometry}
+\geometry{total={210mm,297mm},
+left=25mm,right=25mm,%
+bindingoffset=0mm, top=25mm,bottom=20mm}
+
+\linespread{1.3}
+\pagestyle{empty}
+
+\newcommand{\fillField}[2]{
+    $\underset{\text{#1}}{\parbox[t]{#2}{\dotfill}}$
+}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\begin{document}
+\noindent
+Imię i nazwisko studenta: \fillField{}{6cm} \hfill Kraków, \fillField{}{3cm}\\\\
+Nr albumu:\fillField{}{5cm} \\\\
+Studia \fillField{}{3cm} stopnia\\
+
+% \vskip 1.0cm
+
+\vskip 2.0cm
+
+\begin{center}
+{\Large \underline{\textbf{Deklaracja tematu pracy dyplomowej}}}
+\end{center}
+
+\vskip 0.5cm
+
+\noindent
+\underline{\textbf{Temat pracy:}} \dotfill\\
+
+\noindent
+\null \dotfill \\\\
+\underline{\textbf{Temat pracy w języku angielskim:}} \dotfill\\
+
+\noindent
+\null \dotfill \\\\
+\underline{\textbf{Opiekun:}} \dotfill \\
+
+\vskip 4.0cm
+
+\null\hfill\fillField{(podpis Opiekuna)}{6cm}% \hspace{2.0cm}
+
+\vskip 2.0cm
+
+\null\hfill\fillField{(podpis Studenta)}{6cm}% \hspace{2.0cm}
+
+\vskip 4.0cm
+
+
+\end{document}
+
