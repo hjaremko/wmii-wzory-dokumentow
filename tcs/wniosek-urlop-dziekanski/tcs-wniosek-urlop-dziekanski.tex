@@ -1,0 +1,88 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[MeX]{polski}
+\usepackage{microtype}
+\usepackage{indentfirst}
+\usepackage{calc}
+\usepackage{amsmath}
+\usepackage{multicol}
+% \usepackage{times}
+
+\usepackage[
+pdftitle={Wniosek o przyznanie urlopu dziekańskiego},
+colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black]{hyperref}
+\urlstyle{same}
+
+\usepackage{geometry}
+\geometry{total={210mm,297mm},
+left=25mm,right=25mm,%
+bindingoffset=0mm, top=25mm,bottom=20mm}
+
+\linespread{1.5}
+\pagestyle{empty}
+
+% \newlength{\signaturelength}
+% \newcommand{\fillField}[2]{
+%     $\underset{\text{#1}}{\underline{\hspace{#2}}}$
+% }
+\newcommand{\fillField}[2]{
+    $\underset{\text{#1}}{\parbox[t]{#2}{\dotfill}}$
+}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\begin{document}
+\noindent
+\fillField{(imię i nazwisko studenta)}{7cm} \hfill Kraków, \fillField{}{3cm}\\\\
+\fillField{(nr albumu)}{7cm} \\\\
+\fillField{(rok studiów)}{7cm} \\
+
+% \vskip 1.0cm
+
+\phantom{a}\hfill
+\begin{tabular}[c]{@{}l@{}}
+\textit{\textbf{Prodziekan ds. studenckich}} \\\\
+\fillField{}{7cm}
+\end{tabular}
+
+\vskip 1.5cm
+
+\begin{center}
+{\Large \textbf{Wniosek o przyznanie urlopu dziekańskiego}}
+\end{center}
+
+\vskip 0.5cm
+
+\noindent
+Zwracam się z uprzejmą prośbą o udzielenie mi urlopu dziekańskiego na okres
+od \fillField{}{3cm} do \fillField{}{3cm}. Uprzednio nie przebywałem na
+urlopie/przebywałem na urlopie\footnote[1]{niepotrzebne skreślić} \\
+\fillField{}{4cm} \textit{(jakim)} w okresie
+% \fillField{}{4cm}.\\
+\dotfill\\
+Uzasadnienie: \dotfill\\
+.\dotfill\\
+.\dotfill\\
+
+\noindent
+Jednocześnie proszę o wyrażenie zgody na realizację następujących przedmiotów
+w okresie trwania urlopu:
+    \begin{enumerate}
+        \item \dotfill
+        \item \dotfill
+        \item \dotfill
+        \item \dotfill
+        \item \dotfill
+    \end{enumerate}
+
+\vskip 1.3cm
+
+\hspace{\fill} Z~poważaniem, \hspace{3cm} \\\\
+\null\hfill \fillField{(podpis studenta)}{6cm} %\hspace{2.0cm}
+\vskip 1.0cm
+
+
+
+\end{document}
+
