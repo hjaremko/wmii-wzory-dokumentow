@@ -4,4 +4,24 @@ services: docker
 
 script:
   - bash .gen-tectonic.sh
-  - docker run --mount src=$TRAVIS_BUILD_DIR,target=/usr/src/tex,type=bind dxjoke/tectonic-docker /bin/sh tectonic-command 
+  - docker run --mount src=$TRAVIS_BUILD_DIR,target=/usr/src/tex,type=bind dxjoke/tectonic-docker /bin/sh tectonic-command
+
+before_deploy:
+  - git config --local user.name "hjaremko"
+  - git config --local user.email "hjaremko@outlook.com"
+  - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y-%m-%d')-$(git log --format=%h -1)}
+  - git tag $TRAVIS_TAG
+  - find ./ -name '*.pdf' | xargs zip wmii-wzory-dokumentow-$TRAVIS_TAG.zip
+
+deploy:
+  provider: releases
+  api_key: $github_token
+  file_glob: true
+  file:
+    - ./**/*.pdf
+    - ./tcs/**/.pdf
+    - wmii-wzory-dokumentow-*.zip
+  skip_cleanup: true
+  overwrite: true
+  on:
+    branch: master
