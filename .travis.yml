@@ -3,8 +3,9 @@ language: generic
 services: docker
 
 script:
+  - cd docs
   - bash .gen-tectonic.sh
-  - docker run --mount src=$TRAVIS_BUILD_DIR,target=/usr/src/tex,type=bind dxjoke/tectonic-docker /bin/sh tectonic-command
+  - docker run --mount src=$TRAVIS_BUILD_DIR/docs,target=/usr/src/tex,type=bind dxjoke/tectonic-docker /bin/sh tectonic-command
 
 before_deploy:
   - git config --local user.name "hjaremko"
