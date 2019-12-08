@@ -1,0 +1,68 @@
+\documentclass{wmiisubmission}
+\usepackage{enumitem,amssymb}
+
+\usepackage[
+pdftitle={Wniosek o zwolnienie z opłat},
+colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black]{hyperref}
+\urlstyle{same}
+
+\usepackage{geometry}
+\geometry{total={210mm,297mm},
+left=25mm,right=25mm,%
+bindingoffset=0mm, top=15mm,bottom=10mm}
+
+\linespread{1}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\newlist{todolist}{itemize}{2}
+\setlist[todolist]{label=$\square$}
+
+\begin{document}
+\cracowdate
+\studentinfo{}{}{}{Informatyka - studia stacjonarne}{I stopnia/II stopnia}
+\studentaddress
+\vskip 0.8cm
+\fillField{8cm}[(Właściwy Urząd Skarbowy)]
+
+\addressee[-1.5cm]{\piotrniemiec}
+
+\noindent
+Wniosek o zwolnienie z opłat za usługi edukacyjne – powtarzanie przedmiotów\\
+(kwota: \fillField{4cm} ~~PLN).\\
+
+\noindent
+Na podstawie:
+\begin{todolist}
+    \itemsep0em
+    \item Istotnego pogorszenia sytuacji materialnej w rodzinie
+    \item Uzyskanie wybitnych wyników w nauce
+    \item Wypadku losowego
+    \item Inny \dotfill
+\end{todolist}
+
+\noindent
+Uzasadnienie:\\
+\phantom{a}\dotfill \\
+\phantom{a}\dotfill
+
+\vskip 0.6cm
+\studentsignature
+\vskip 0.3cm
+
+\noindent
+{\footnotesize Oświadczam, iż jestem świadomy/a, że całkowite lub częściowe zwolnienie z opłaty jest to dochód, od którego nie zostały pobrane zaliczki na podatek dochodowy, \textbf{a obowiązek odprowadzenia podatku do fiskusa spoczywa na barkach studenta}. Przychody te wykazane są na formularzu PIT-8C w części D. Formularz PIT-8C, zostanie przygotowany przez Uczelnie w ustawowym terminie}.
+
+\vskip 0.4cm
+\studentsignature
+\vskip 0.4cm
+
+\noindent
+Dochód na członka rodziny {\tiny[potwierdzony przez Koordynatora pomocy materialnej]}: \dotfill
+\vskip 1cm
+
+\decision{Opinia Kierownika}
+
+\decision{Decyzja Dziekana}
+
+\end{document}

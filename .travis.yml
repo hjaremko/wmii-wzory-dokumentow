@@ -1,11 +1,22 @@
-sudo: required
 language: generic
-services: docker
+dist: bionic
+sudo: required
+
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install -y texlive tex-gyre texlive-luatex lmodern  texlive-xetex texlive-latex-base texlive-latex-extra texlive-lang-polish texlive-generic-recommended texlive-fonts-recommended texlive-fonts-extra texlive-extra-utils texlive-science latexmk xzdec
+
+cache:
+  directories:
+    - /tmp/texlive
+
+before_script:
+  - mkdir ~/.fonts
+  - cp $TRAVIS_BUILD_DIR/fonts/* ~/.fonts/
+  - cd $TRAVIS_BUILD_DIR/docs/
 
 script:
-  - cd docs
-  - bash .gen-tectonic.sh
-  - docker run --mount src=$TRAVIS_BUILD_DIR/docs,target=/usr/src/tex,type=bind dxjoke/tectonic-docker /bin/sh tectonic-command
+  - latexmk -xelatex *.tex
 
 before_deploy:
   - git config --local user.name "hjaremko"
@@ -19,10 +30,12 @@ deploy:
   api_key: $github_token
   file_glob: true
   file:
+    - ./*.pdf
     - ./**/*.pdf
-    - ./tcs/**/.pdf
+    - ./tcs/**/*.pdf
     - wmii-wzory-dokumentow-*.zip
   skip_cleanup: true
   overwrite: true
   on:
-    branch: master
+    # branch: master
+    all_branches: true

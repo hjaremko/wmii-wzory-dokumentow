@@ -1,0 +1,58 @@
+\documentclass{wmiisubmission}
+
+\usepackage[
+pdftitle={Powtarzanie przedmiotu},
+colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black]{hyperref}
+\urlstyle{same}
+
+\geometry{total={210mm,297mm},
+left=25mm,right=25mm,%
+bindingoffset=0mm, top=15mm,bottom=10mm}
+
+\newcounter{footnotemarknum}
+\newcommand{\fnm}{\addtocounter{footnotemarknum}{1}\footnotemark}
+
+\newcommand{\fnt}[1]{
+    \addtocounter{footnote}{-\value{footnotemarknum}}
+    \addtocounter{footnote}{1}
+    \footnotetext{#1}
+    \setcounter{footnotemarknum}{0}
+}
+
+\begin{document}
+\cracowdate
+\studentinfo{}{}{}{Matematyka Komputerowa - studia stacjonarne}{I stopnia/II stopnia*}
+\studentaddress
+\addressee[-1em]{\piotrniemiec}
+
+\vskip 1.5cm
+
+Proszę o naliczenie należności za powtarzanie n/w przedmiotu(ów) w roku\\
+akademickim \fillField{1cm}/\fillField{1cm}.\\
+
+\textit{Nazwa przedmiotu/semestr/liczba punktów ECTS/liczba godzin}
+\begin{enumerate}
+    \item \dotfill
+    \item \dotfill
+    \item \dotfill
+    \item \dotfill
+\end{enumerate}
+{\footnotesize \bf Opłata za 1 godzinę jest zgodna z podpisaną umową i wynosi odpowiednio dla studentów rozpoczynających studia w roku akademickim 2013/14 i 14/15 – 9,00 zł, 15/16 – 8,00 zł; 16/17 – 7,00zł}\\
+
+\underline{Kwota do zapłaty:}\\
+\textit{Semestr zimowy [wpłata do 22.10]}\\
+Liczba punktów/godzin \dotfill $\times$ kwota \dotfill \\\\
+\textit{Semestr letni [wpłata do 15.03]}\\
+Liczba punktów/godzin \dotfill $\times$ kwota \dotfill \\
+
+\hspace{\fill} Razem: \fillField{2.5cm} \hspace{2.0cm}
+
+\vskip 0.6cm
+
+\studentsignature
+
+\vskip 1.0cm
+
+\decision{Decyzja Kierownika}
+
+\end{document}

@@ -139,8 +139,6 @@
     \vskip -1.23em
 }
 
-% \textbf{Kierunek:} Matematyka Komputerowa -- studia stacjonarne pierwszego/drugiego* stopnia\\
-
 \newcommand{\requesttitle}[1]{
     \begin{center}
     {\Large \textbf{#1}}
@@ -164,9 +162,12 @@
 
 \LoadClass[a4paper,11pt]{article}
 \RequirePackage{polski}
-\RequirePackage[utf8]{inputenc}
+% \RequirePackage[utf8]{inputenc}
+% \RequirePackage[T1]{fontenc}
+\RequirePackage{fontspec}
 \RequirePackage{calc}
 \RequirePackage{amsmath}
+% \RequirePackage{mathspec}
 \RequirePackage{geometry}
 \RequirePackage{multicol}
 \RequirePackage{setspace}
@@ -174,6 +175,9 @@
 \RequirePackage{microtype}
 % \RequirePackage{newpxtext}
 % \RequirePackage{newpxmath}
+
+\setmainfont{TeX Gyre Pagella}
+% \setmathfont{TeX Gyre Pagella Math}
 
 \geometry{total={210mm,297mm},
     left=25mm,right=25mm,%

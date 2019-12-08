@@ -1,0 +1,63 @@
+\documentclass{wmiisubmission}
+
+\usepackage[
+pdftitle={Deklaracja o zamiarze wykorzystania urlopu studenckiego},
+colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black]{hyperref}
+\urlstyle{same}
+
+\newcounter{footnotemarknum}
+\newcommand{\fnm}{\addtocounter{footnotemarknum}{1}\footnotemark}
+
+\newcommand{\fnt}[1]{
+    \addtocounter{footnote}{-\value{footnotemarknum}}
+    \addtocounter{footnote}{1}
+    \footnotetext{#1}
+    \setcounter{footnotemarknum}{0}
+}
+
+\begin{document}
+\cracowdate
+\studentinfo{}{}{}{Informatyka - studia stacjonarne}{I stopnia}
+\studentaddress
+\addressee[-1.5cm]{\piotrniemiec}
+
+% \vskip 1cm
+
+\requesttitle{Deklaracja o zamiarze wykorzystania urlopu studenckiego}
+
+
+Zgodnie z Regulaminu studiów I stopnia, II stopnia oraz jednolitych studiów
+magisterskich oświadczam, że zamierzam skorzystać z urlopu od zajęć w okresie:\\
+od \fillField{3cm} do \fillField{3cm}.\\
+{[semestr zimowy, semestr letni, rok akademicki \fillField{1cm}/\fillField{1cm}]}
+\textit{    (niepotrzebne skreślić)}\\
+Ponadto proszę o wyrażenie zgody na udział w zajęciach oraz zaliczenie n/w przedmiotów:
+
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item \dotfill
+        \item \dotfill
+        \item \dotfill
+        \item \dotfill
+        \item \dotfill
+        \item \dotfill
+        \item \dotfill
+        \item \dotfill
+        \item \dotfill
+        \item \dotfill
+        \item \dotfill
+        \item \dotfill
+    \end{enumerate}
+    \end{multicols}
+
+\vskip 0.3cm
+
+\studentsignature
+
+\vskip 1.0cm
+
+\decision{Opinia Kierownika}
+
+\decision{Opinia Dziekana}
+
+\end{document}

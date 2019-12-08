@@ -1,0 +1,87 @@
+\documentclass{wmiisubmission}
+
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{graphicx}
+
+\usepackage[
+pdftitle={Wniosek o przepisanie przedmiotów},
+colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black]{hyperref}
+\urlstyle{same}
+
+\newcounter{footnotemarknum}
+\newcommand{\fnm}{\addtocounter{footnotemarknum}{1}\footnotemark}
+
+\newcommand{\fnt}[1]{
+    \addtocounter{footnote}{-\value{footnotemarknum}}
+    \addtocounter{footnote}{1}
+    \footnotetext{#1}
+    \setcounter{footnotemarknum}{0}
+}
+
+\newcommand{\courseTable}{
+    \centering
+    \resizebox{\textwidth}{!}{
+        \begin{tabular}{|c|c|c|c|c|}
+
+            \hline
+            \textbf{Przedmiot zaliczony}\textsuperscript{1} & \begin{tabular}{@{}c@{}}\textbf{Forma zajęć/liczba} \\ \textbf{godzin}\textsuperscript{2}\end{tabular} &
+                \begin{tabular}{@{}c@{}}\textbf{Punkty} \\ \textbf{ECTS}\end{tabular} & \textbf{Uzyskane oceny}\textsuperscript{3} & \begin{tabular}{@{}c@{}}\textbf{Rok} \\ \textbf{akademicki}\textsuperscript{4}\end{tabular}  \\
+            \hline
+              &   &   &   &   \\
+            \hline
+            \textbf{Przedmiot w IIiMK [nazwa]} & \begin{tabular}{@{}c@{}}\textbf{Forma zajęć/liczba} \\ \textbf{godzin}\end{tabular} &
+                \begin{tabular}{@{}c@{}}\textbf{Punkty} \\ \textbf{ECTS}\end{tabular} & \textbf{Ostateczne oceny}\textsuperscript{5} & \begin{tabular}{@{}c@{}}\textbf{Rok} \\ \textbf{akademicki}\textsuperscript{6}\end{tabular}  \\
+            \hline
+              &   &   &   &   \\
+            \hline
+
+        \end{tabular}
+    }
+
+    \vskip 1.0cm
+}
+
+\begin{document}
+\cracowdate
+\studentinfo{}{}{}{Metamatyka komputerowa - studia stacjonarne}{I stopnia/II stopnia}
+\studentaddress
+\addressee{\piotrniemiec}
+
+\vskip 3.0cm
+
+\requesttitle{Wniosek o przepisanie przedmiotów}
+
+\vskip 0.5cm
+
+Zwracam się z uprzejmą prośbą o przepisanie przedmiotów wymienionych w
+załączniku do niniejszego podania i zaliczenie ich do programu studiów na
+kierunku Matematyka komputerowa w roku akademickim 20\fillField{1cm}/20\fillField{1cm}.
+
+\vskip 2.0cm
+
+\studentsignature
+
+\vskip 3.0cm
+
+\decision{Decyzja Kierownika}
+
+\pagebreak
+
+\newgeometry{tmargin=1.4cm, bmargin=1cm, lmargin=1.4cm, rmargin=1.4cm}
+
+\courseTable
+\courseTable
+\courseTable
+\courseTable
+\courseTable
+
+
+\fnt{Faktyczna nazwa przedmiotu}
+\fnt{Forma zajęć czyli np. w-wykład, c-ćwiczenia, l-laboratorium, s-seminarium}
+\fnt{Oceny uzyskane np. w-5.0 c-5.0}
+\fnt{Rok akademicki, w którym przedmiot był faktycznie realizowany}
+\fnt{Ostateczna ocena zatwierdzona do wpisania przez Kierownika studiów [pole należy zostawić puste]}
+\fnt{Rok akademicki, w którym przedmiot ma być zaliczony}
+
+
+\end{document}
