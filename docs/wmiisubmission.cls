@@ -160,7 +160,7 @@
     Data \fillField{3cm} ~Podpis \dotfill \\
 }
 
-\LoadClass[a4paper,11pt]{article}
+\LoadClass[a4paper,8pt]{article}
 \RequirePackage{polski}
 % \RequirePackage[utf8]{inputenc}
 % \RequirePackage[T1]{fontenc}
