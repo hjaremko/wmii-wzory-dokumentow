@@ -16,5 +16,5 @@ Dokumenty w formacie `pdf` zostały udostępnione do pobrania w zakładce
 
 PRZED                                  |  PO
 :-------------------------------------:|:-------------------------------------:
-![:(](https://i.imgur.com/5vXuMPN.png) | ![:)](https://i.imgur.com/yo1nnDE.png)
+![:(](https://i.imgur.com/5vXuMPN.png) | ![:)](https://i.imgur.com/H3q9XyT.png)
 
