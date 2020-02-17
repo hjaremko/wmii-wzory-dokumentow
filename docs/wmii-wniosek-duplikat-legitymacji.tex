@@ -8,7 +8,9 @@
 \usepackage{amsmath}
 \usepackage{multicol}
 \usepackage[symbol]{footmisc}
-% \usepackage{times}
+\usepackage{fontspec}
+
+\setmainfont{TeX Gyre Pagella}
 
 \usepackage[
 pdftitle={Oświadczenie o utracie legitymacji studenckiej},
@@ -23,10 +25,6 @@ bindingoffset=0mm, top=25mm,bottom=20mm}
 \linespread{1.2}
 \pagestyle{empty}
 
-% \newlength{\signaturelength}
-% \newcommand{\fillField}[2]{
-%     $\underset{\text{#1}}{\underline{\hspace{#2}}}$
-% }
 \newcommand{\fillField}[2]{
     $\underset{\text{#1}}{\parbox[t]{#2}{\dotfill}}$
 }
@@ -58,7 +56,6 @@ Niniejsze oświadczenie jest podstawą do unieważnienia utraconej legitymacji. 
 Proszę o wystawienie duplikatu legitymacji studenckiej, po opłaceniu przeze mnie należnej kwoty.
 
 \vskip 1.2cm
-\hspace{\fill} \fillField{(podpis studenta)}{5cm} \hspace{2.0cm}
+\hspace{\fill} \fillField{(podpis studenta)}{7cm} \hspace{2.0cm}
 
 \end{document}
- 

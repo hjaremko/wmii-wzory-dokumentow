@@ -97,6 +97,16 @@
   }
 }
 
+\NewDocumentCommand{\smallstudentaddress}{ g g }{%
+  {\setstretch{2.3}
+
+    \fillField{8cm}[(adres e-mail)]{#1}
+
+    \fillField{8cm}[(telefon)]{#2}
+
+  }
+}
+
 \newcommand{\bakalarski}{
     \textit{Zastępca dyrektora ds. dydaktycznych} \\
     \textit{dr Sławomir Bakalarski}

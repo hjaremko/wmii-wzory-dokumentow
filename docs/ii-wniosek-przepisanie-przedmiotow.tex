@@ -2,6 +2,7 @@
 
 \usepackage[table,xcdraw]{xcolor}
 \usepackage{graphicx}
+\usepackage{tabularx}
 
 \usepackage[
 pdftitle={Wniosek o przepisanie przedmiotów},
@@ -21,21 +22,21 @@ colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black]{hyperref}
 \newcommand{\courseTable}{
     \centering
     \resizebox{\textwidth}{!}{
-        \begin{tabular}{|c|c|c|c|c|}
-
+        \begin{tabularx}{\textwidth}{|X|c|c|c|c|}
             \hline
-            \textbf{Przedmiot zaliczony}\textsuperscript{1} & \begin{tabular}{@{}c@{}}\textbf{Forma zajęć/liczba} \\ \textbf{godzin}\textsuperscript{2}\end{tabular} &
-                \begin{tabular}{@{}c@{}}\textbf{Punkty} \\ \textbf{ECTS}\end{tabular} & \textbf{Uzyskane oceny}\textsuperscript{3} & \begin{tabular}{@{}c@{}}\textbf{Rok} \\ \textbf{akademicki}\textsuperscript{4}\end{tabular}  \\
-            \hline
-              &   &   &   &   \\
-            \hline
-            \textbf{Przedmiot w IIiMK [nazwa]} & \begin{tabular}{@{}c@{}}\textbf{Forma zajęć/liczba} \\ \textbf{godzin}\end{tabular} &
-                \begin{tabular}{@{}c@{}}\textbf{Punkty} \\ \textbf{ECTS}\end{tabular} & \textbf{Ostateczne oceny}\textsuperscript{5} & \begin{tabular}{@{}c@{}}\textbf{Rok} \\ \textbf{akademicki}\textsuperscript{6}\end{tabular}  \\
+            {\small\textbf{Przedmiot zaliczony}}\textsuperscript{1} & {\footnotesize\textbf{Forma zajęć/liczba godzin}}\textsuperscript{2} &
+            {\small \bf ECTS} & {\small\textbf{Uzyskane oceny}}\textsuperscript{3} & {\small\textbf{Rok akademicki}}\textsuperscript{4}  \\
             \hline
               &   &   &   &   \\
+              &   &   &   &   \\
             \hline
-
-        \end{tabular}
+            {\small\textbf{Przedmiot w IIiMK (nazwa)}}\textsuperscript{1} & {\footnotesize\textbf{Forma zajęć/liczba godzin}}\textsuperscript{2} &
+            {\small \bf ECTS} & {\small\textbf{Ostateczne oceny}}\textsuperscript{5} & {\small\textbf{Rok akademicki}}\textsuperscript{6}  \\
+            \hline
+              &   &   &   &   \\
+              &   &   &   &   \\
+            \hline
+        \end{tabularx}
     }
 
     \vskip 1.0cm
@@ -61,7 +62,7 @@ kierunku Informatyka w roku akademickim 20\fillField{1cm}/20\fillField{1cm}.
 
 \studentsignature
 
-\vskip 3.0cm
+\vfill
 
 \decision{Decyzja Kierownika}
 
@@ -69,6 +70,7 @@ kierunku Informatyka w roku akademickim 20\fillField{1cm}/20\fillField{1cm}.
 
 \newgeometry{tmargin=1.4cm, bmargin=1cm, lmargin=1.4cm, rmargin=1.4cm}
 
+\courseTable
 \courseTable
 \courseTable
 \courseTable
