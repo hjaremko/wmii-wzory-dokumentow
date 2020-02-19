@@ -1,52 +1,58 @@
 \documentclass{wmiisubmission}
+\usepackage{tabularx}
 
 \usepackage[
 pdftitle={Wniosek o zmianę grupy WF},
 colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black]{hyperref}
 \urlstyle{same}
 
-\linespread{1.6}
+\geometry{total={210mm,297mm},
+left=25mm,right=25mm,%
+bindingoffset=0mm, top=25mm,bottom=25mm}
+
+\linespread{1.8}
 
 \begin{document}
-\cracowdate
 \studentinfo
-\smallstudentaddress
 
-\addressee[1cm]{
-\textit{Sz. Pani}\\
-\textit{Małgorzata Gawor}\\
-\textit{Z-ca Kierownika Studium WFiS UJ ds. dydaktycznych}
-}
-
-\vskip 3.5cm
-\requesttitle{Wniosek}
-
-
-Zwracam się z prośbą o \underline{wyrejestrowanie} mnie w USOS z przedmiotu
-o kodzie \texttt{SWF}\dotfill \\grupa nr \fillField{2cm} oraz o
-\underline{zarejestrowanie} na przedmiot o kodzie \texttt{SWF}\dotfill\\
-grupa nr \fillField{2cm}, termin zajęć \dotfill\\
-
-UZASADNIENIE \dotfill\\
-.\dotfill\\
-.\dotfill\\
-
-\vskip 0.6cm
-
-\fillField{7cm}[(data i podpis prowadzącego dotychczasową grupę)] \hspace{\fill}
-\fillField{7cm}[(podpis osoby wnioskującej)]
-\vskip 1.0cm
-
-\noindent\rule{\textwidth}{0.5pt}
+\vskip 1.5cm
 
 \begin{center}
-ZGODA PROWADZĄCEGO NOWĄ GRUPĘ
+    Prośba o zmianę grupy zajęciowej
 \end{center}
 
-Wyrażam zgodę na przyjęcie Pani/Pana ~\dotfill~ do ww. grupy zajęciowej.
+\begin{tabularx}{\textwidth}{|X|X|}
+    \hline
+    Grupa obecna \textbf{(kod i nr)}: & Grupa docelowa \textbf{(kod i nr)}: \\
+    \hline
+    Nazwisko prowadzącego:  & Nazwisko prowadzącego: \\
+    \hline
+    Termin zajęć:  & Termin zajęć: \\
+    \hline
+    Podpis prowadzącego:  & Podpis prowadzącego: \\
+    \hline
+\end{tabularx}
 
-\vskip 2cm
+\vfill
 
-\hspace{\fill} \fillField{6cm}[(data i podpis prowadzącego)] \hspace{2.0cm}
+\studentinfo
+
+\vskip 1.5cm
+
+\begin{center}
+    Prośba o zmianę grupy zajęciowej
+\end{center}
+
+\begin{tabularx}{\textwidth}{|X|X|}
+    \hline
+    Grupa obecna \textbf{(kod i nr)}: & Grupa docelowa \textbf{(kod i nr)}: \\
+    \hline
+    Nazwisko prowadzącego:  & Nazwisko prowadzącego: \\
+    \hline
+    Termin zajęć:  & Termin zajęć: \\
+    \hline
+    Podpis prowadzącego:  & Podpis prowadzącego: \\
+    \hline
+\end{tabularx}
 
 \end{document}
