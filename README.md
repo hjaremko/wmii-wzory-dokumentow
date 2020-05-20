@@ -1,4 +1,4 @@
-# Wzory podań i dokumentów [![Build Status](https://travis-ci.com/hjaremko/wmii-wzory-dokumentow.svg?branch=master)](https://travis-ci.com/hjaremko/wmii-wzory-dokumentow)
+# Wzory podań i dokumentów ![Build](https://github.com/hjaremko/wmii-wzory-dokumentow/workflows/Build/badge.svg)
 
 Repozytorium zawiera zestaw wzorów podań i innych dokumentów, sporządzonych
 na podstawie oficjalnych szablonów.
