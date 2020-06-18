@@ -1,0 +1,58 @@
+\documentclass[english, bsc]{iithesis}
+
+\usepackage{lipsum}
+\usepackage{float}
+\usepackage{icomma}
+\usepackage{etoolbox}
+
+\title{Thesis title}
+\author{Name Surname}
+\authorNumber{111111}
+\adviser{Supervisor}
+
+\begin{document}
+    \maketitle
+
+    \begin{abstract}
+        \lipsum[2-4]
+    \end{abstract}
+
+    \clearpage
+    \tableofcontents
+
+    \listoffigures
+    \clearpage
+
+    \cleardoublepage
+
+
+    \section{Introduction}
+
+
+    \section{Theoretical foundations}
+
+    \subsection{Description}
+
+    \subsection{Known methods}
+
+
+    \section{Application}
+
+    \subsection{Application}
+
+    \begin{figure}[H]
+        \caption{Class diagram}
+        \label{fig:class_diagram}
+        \centering
+        \includegraphics[width=0.7\textwidth]{diagrams/sample_class_diagram.png}
+    \end{figure}
+
+    \begin{thebibliography}{2}
+        \bibitem{Cormen04}
+        T. H. Cormen, Ch. E. Leiserson, R. L. Rivest, C. Stein,
+        Wprowadzenie do algorytmów, Wyd. 6, WNT, Warszawa 2004.
+        \bibitem{one}
+        Name Surname, Some Article, Some Journal, 2000.
+    \end{thebibliography}
+
+\end{document}
