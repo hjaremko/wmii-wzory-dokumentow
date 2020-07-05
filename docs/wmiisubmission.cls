@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{wmiisubmission}[2019/10/15 Wniosek przeznaczony do uzytku na Wydziale Matematyki i Informatyki Uniwersytetu Jagiellonskiego]
+\ProvidesClass{wmiisubmission}[2020/07/05 Wniosek przeznaczony do uzytku na Wydziale Matematyki i Informatyki Uniwersytetu Jagiellonskiego]
 
 \RequirePackage{xparse}
 
@@ -171,23 +171,24 @@
 }
 
 \LoadClass[a4paper,8pt]{article}
+
 \RequirePackage{polski}
-% \RequirePackage[utf8]{inputenc}
-% \RequirePackage[T1]{fontenc}
-\RequirePackage{fontspec}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
 \RequirePackage{calc}
 \RequirePackage{amsmath}
-% \RequirePackage{mathspec}
 \RequirePackage{geometry}
 \RequirePackage{multicol}
 \RequirePackage{setspace}
 \RequirePackage[normalem]{ulem}
 \RequirePackage{microtype}
-% \RequirePackage{newpxtext}
-% \RequirePackage{newpxmath}
+\RequirePackage{newpxtext}
 
-\setmainfont{TeX Gyre Pagella}
-% \setmathfont{TeX Gyre Pagella Math}
+\RequirePackage
+[
+colorlinks=true,linkcolor=black,urlcolor=black,citecolor=black]
+{hyperref}
+\urlstyle{same}
 
 \geometry{total={210mm,297mm},
     left=25mm,right=25mm,%

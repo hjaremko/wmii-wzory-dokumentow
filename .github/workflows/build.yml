@@ -17,7 +17,7 @@ jobs:
       - name: Build docs
         run: |
           cd docs
-          latexmk -xelatex *.tex
+          latexmk *.tex
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
         with:
