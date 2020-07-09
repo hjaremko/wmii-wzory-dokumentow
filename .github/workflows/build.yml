@@ -5,7 +5,7 @@ on: [push]
 jobs:
   build:
     name: Build documents
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     steps:
       - name: Chceckout code
@@ -13,16 +13,34 @@ jobs:
       - name: Install TeX
         run: |
           sudo apt-get update
-          sudo apt-get install -y texlive tex-gyre texlive-luatex lmodern  texlive-xetex texlive-latex-base texlive-latex-extra texlive-lang-polish texlive-generic-recommended texlive-fonts-recommended texlive-fonts-extra texlive-extra-utils texlive-science latexmk xzdec
+          sudo apt-get install -y texlive tex-gyre texlive-luatex lmodern texlive-xetex texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-lang-polish texlive-fonts-recommended texlive-fonts-extra texlive-extra-utils texlive-science latexmk xzdec
       - name: Build docs
         run: |
           cd docs
-          latexmk *.tex
+          latexmk -pdf *.tex
+      - name: Zip docs
+        uses: montudor/action-zip@v0.1.0
+        with:
+          args: zip -qq -r ./wmii-wzory-dokumentow.zip . -i ./docs/*.pdf
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
         with:
           name: docs
           path: docs/*.pdf
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: docs-zip
+          path: wmii-wzory-dokumentow.zip
+      - name: Zip thesis template
+        uses: montudor/action-zip@v0.1.0
+        with:
+          args: zip -qq -r ./iithesis.zip ./iithesis
+      - name: Upload thesis template
+        uses: actions/upload-artifact@v2
+        with:
+          name: thesis
+          path: iithesis.zip
 
   release:
     name: Publish documents
@@ -37,9 +55,17 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: docs
+      - name: Download zipped artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: docs-zip
+      - name: Download thesis template
+        uses: actions/download-artifact@v2
+        with:
+          name: thesis
       - name: Create release
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "./*.pdf"
+          artifacts: "./*.pdf, *.zip"
           token: ${{ secrets.GITHUB_TOKEN }}
           draft: true
