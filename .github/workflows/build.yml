@@ -14,6 +14,11 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y texlive tex-gyre texlive-luatex lmodern texlive-xetex texlive-latex-base texlive-latex-recommended texlive-latex-extra texlive-lang-polish texlive-fonts-recommended texlive-fonts-extra texlive-extra-utils texlive-science latexmk xzdec
+      - name: Generate docs
+        run: |
+          cd docs
+          chmod +x generate-all.py
+          ./generate-all.py
       - name: Build docs
         run: |
           cd docs

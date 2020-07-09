@@ -1,32 +1,30 @@
-\PassOptionsToPackage{pdftitle={Powtarzanie przedmiotu}}{hyperref}
+\PassOptionsToPackage{pdftitle={Powtarzanie roku}}{hyperref}
 
 \documentclass{wmiisubmission}
+
 \usepackage{tabularx}
 
 \geometry{total={210mm,297mm},
 left=25mm,right=25mm,%
-bindingoffset=0mm, top=15mm,bottom=15mm}
+bindingoffset=0mm, top=10mm,bottom=10mm}
 
-\newcounter{footnotemarknum}
-\newcommand{\fnm}{\addtocounter{footnotemarknum}{1}\footnotemark}
+\linespread{1}
 
-\newcommand{\fnt}[1]{
-    \addtocounter{footnote}{-\value{footnotemarknum}}
-    \addtocounter{footnote}{1}
-    \footnotetext{#1}
-    \setcounter{footnotemarknum}{0}
-}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
 
 \begin{document}
 \cracowdate
-\studentinfo{}{}{}{Matematyka Komputerowa - studia stacjonarne}{I stopnia/II stopnia*}
+\studentinfo{}{}{}{@COURSE@ - studia stacjonarne}{I stopnia/II stopnia\footnote[1]{niepotrzebne skreślić}}
 \studentaddress
-\addressee[-1em]{\piotrniemiec}
+\addressee[-3em]{\piotrniemiec}
 
-\vskip 1.5cm
+\vskip 0.5cm
 
-Proszę o naliczenie należności za powtarzanie n/w przedmiotu(ów) w roku
-akademickim \fillField{1cm}/\fillField{1cm}.\\
+Na podstawie Regulaminu Studiów w UJ zwracam się z prośbą o wyrażenie zgody na
+powtarzanie \fillField{3cm}~ roku studiów w roku
+w roku akademickim \fillField{1cm}/\fillField{1cm}~ z powodu nieuzyskania liczby
+punktów ECTS, jaka jest wymagana do wpisu na kolejny
+rok studiów, oraz o zgodę na powtarzanie n/w przedmiotów:\\
 
 \begin{tabularx}{\textwidth}{|l|X|l|l|l|}
 
@@ -45,7 +43,12 @@ akademickim \fillField{1cm}/\fillField{1cm}.\\
     4.  &   &   &  &\\
         &   &   &  &\\
     \hline
-
+    5.  &   &   &  &\\
+        &   &   &  &\\
+    \hline
+    6.  &   &   &  &\\
+    &   &   &  &\\
+    \hline
 \end{tabularx}
 
 \vskip 0.3cm
@@ -59,6 +62,7 @@ akademickim \fillField{1cm}/\fillField{1cm}.\\
 
 \vfill
 
+\noindent
 \underline{Kwota do zapłaty:}\\
 \textit{Semestr zimowy [wpłata do 22.10]}\\
 Liczba punktów/godzin \dotfill $\times$ kwota \dotfill \\\\
