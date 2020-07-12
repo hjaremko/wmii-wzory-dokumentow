@@ -21,7 +21,8 @@ templates = [
     "zaliczenie-lektoratu.tex",
     "zaliczenie-przedmiotu-humanistycznego.tex",
     "podanie-realizacja-przedmiotow-awansem.tex",
-    "zmiany-zajec.tex"
+    "zmiany-zajec.tex",
+    "wniosek-wydanie-dyplomu-po-angielsku.tex"
 ]
 
 for template in templates:

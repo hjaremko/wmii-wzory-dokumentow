@@ -1,0 +1,65 @@
+\PassOptionsToPackage{pdftitle={Wniosek o wydanie odpisu dyplomu w jezyku angielskim}}{hyperref}
+
+\documentclass{wmiisubmission}
+\usepackage{enumitem,amssymb}
+
+\linespread{1.3}
+
+\NewDocumentCommand{\info}{ g g g }{%
+  {\setstretch{2.3}
+
+    \fillField{8cm}[(imię i nazwisko)]{#1}
+
+    \fillField{8cm}[(kierunek studiów)]{#2}
+
+    \fillField{8cm}[(jednostka)]{#3}
+
+  }
+}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\newlist{todolist}{itemize}{2}
+\setlist[todolist]{label=$\square$}
+
+\begin{document}
+\cracowdate
+\info{}{@COURSE@}{Instytut Informatyki i Matematyki Komputerowej}
+
+\vskip 2cm
+
+\begin{center}
+    \large
+    \textbf{WNIOSEK\\
+    o wydanie odpisów dokumentów poświadczających ukończenie studiów wyższych
+    w tłumaczeniu na język angielski dla absolwentów, którzy rozpoczęli studia
+    przed rokiem akademickim 2019/2020
+    }
+\end{center}
+
+\vskip 1cm
+
+Proszę o wydanie odpisu dyplomu i suplementu do dyplomu w tłumaczeniu na język
+angielski\footnote{Każdy absolwent otrzymuje oryginał dyplomu i suplementu do
+dyplomu oraz ich 2 odpisy w języku polskim (opłata 60 zł).}:
+
+\begin{todolist}
+    \itemsep0em
+    \item TAK \hfill liczba kompletów:
+    \fillField{3cm}[(opłata: 40 zł za komplet)] \hspace{2cm}
+    \vskip 1cm
+    \item NIE
+\end{todolist}
+
+\vskip 1cm
+\hspace{\fill} \signature{(podpis osoby wnioskującej)}
+\vfill
+
+{
+\small
+Podstawa prawna:
+art. 264 ust. 2 ustawy z dnia 3 lipca 2018 r. Przepisy wprowadzające ustawę
+Prawo o szkolnictwie wyższym i nauce (Dz. U. z 2018 poz. 1669 z późn. zm.)
+}
+
+\end{document}
